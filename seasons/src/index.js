@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom'
 class App extends React.Component {
     constructor(props) {
         super(props)
+
+        this.state = {lat: null }
     }
 
     render() {
@@ -12,7 +14,7 @@ class App extends React.Component {
             (error) => console.log(error)
         )
 
-        return <div>Latitude: </div>
+        return <div>Latitude: {this.state.lat}</div>
     }
 }
 
