@@ -24,7 +24,7 @@ class App extends React.Component {
             return <SeasonDisplay lat={this.state.lat}/>
         }
 
-        return <Loader />
+        return <Loader message="Zezwól na sprawdzenie Twojej lokalizacji..."/>
     }
 }
 
